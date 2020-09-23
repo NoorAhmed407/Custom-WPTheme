@@ -1,5 +1,6 @@
 <?php 
 
+//Load StyleSheets
 function load_css()
         {
         
@@ -16,6 +17,7 @@ function load_css()
         add_action('wp_enqueue_scripts', 'load_css');
 
 
+//Load JavaScripts
 
 function load_js()
         {
@@ -26,6 +28,19 @@ function load_js()
         }
         add_action('wp_enqueue_scripts', 'load_js');
 
+//Theme Options
+add_theme_support('menus');
 
+
+//Menus
+register_nav_menus(
+
+    array(
+        'top-menu' =>  'Top Menu Location',
+        'mobile-menu' =>  'Mobile Menu Location'
+
+    )
+
+)
 
 ?>

@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
-
+<secction class="page-wrap">
 <div class="container">
-
-
    <h1> 
      <?php the_title();?> 
    </h1>
@@ -13,6 +11,7 @@
 
 
 </div>
+</secction>
 
 
 <?php get_footer(); ?>
